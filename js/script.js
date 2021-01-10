@@ -39,7 +39,7 @@ function removeColumn() {
         tr[i].removeChild(tr[i].lastChild);
     }
 }
-
+//Come back to this
 let selectedColor = "";
 let mouseHold = false;
 let currentColor = "";
