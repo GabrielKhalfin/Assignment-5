@@ -83,7 +83,10 @@ function setColor(){
     this.style.backgroundColor = selectedColor;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6bed6fffd4713e106aae57cfff6a4aea3bffacc3
 function colorAllCells() {
     let allCells = document.getElementsByTagName("td");
     for (let i = 0; i < allCells.length; i++) {
@@ -98,3 +101,7 @@ function resetColorOfCells() {
         allCells[i].style.backgroundColor = "";
     }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6bed6fffd4713e106aae57cfff6a4aea3bffacc3
