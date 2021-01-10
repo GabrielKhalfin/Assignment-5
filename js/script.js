@@ -43,3 +43,42 @@ function removeColumn() {
 let selectedColor = "";
 let mouseHold = false;
 let currentColor = "";
+
+function selectColor(color) {
+    selectedColor = color;
+}
+
+function colorAllUncoloredCells() {
+    let allCells = document.getElementsByTagName("td");
+    for (let i = 0; i < allCells.length; i++) {
+        if (allCells[i].style.backgroundColor == "")
+            allCells[i].style.backgroundColor = selectedColor;
+    }
+}
+
+function allowChangeColor(cell){
+    cell.addEventListener("click", setColor);
+
+    cell.addEventListener("mousedown", function() {
+        mouseHold = true;
+        currentColor = selectedColor;
+    })
+
+    cell.addEventListener("mousemove" , function() {
+        if (mouseHold == true)
+        {
+            cell.style.backgroundColor = currentColor;
+        }
+    })
+
+    cell.addEventListener("mouseup" , function() {
+        if (mouseHold == true)
+        {
+            mouseHold = false;
+        }
+    })
+}
+
+function setColor(){
+    this.style.backgroundColor = selectedColor;
+}
