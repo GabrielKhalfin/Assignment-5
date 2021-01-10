@@ -97,3 +97,4 @@ function resetColorOfCells() {
         allCells[i].style.backgroundColor = "";
     }
 }
+
