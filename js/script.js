@@ -82,3 +82,18 @@ function allowChangeColor(cell){
 function setColor(){
     this.style.backgroundColor = selectedColor;
 }
+
+function colorAllCells() {
+    let allCells = document.getElementsByTagName("td");
+    for (let i = 0; i < allCells.length; i++) {
+        allCells[i].style.backgroundColor = selectedColor;
+    }
+}
+
+
+function resetColorOfCells() {
+    let allCells = document.getElementsByTagName("td");
+    for (let i = 0; i < allCells.length; i++) {
+        allCells[i].style.backgroundColor = "";
+    }
+}
