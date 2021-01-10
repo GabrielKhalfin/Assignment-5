@@ -83,7 +83,6 @@ function setColor(){
     this.style.backgroundColor = selectedColor;
 }
 
-
 function colorAllCells() {
     let allCells = document.getElementsByTagName("td");
     for (let i = 0; i < allCells.length; i++) {
